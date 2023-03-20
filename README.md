@@ -1,4 +1,4 @@
-# quickly javascript game
+# quickly javascript game #
 ==========================================
 It is my first game wrote in javascript
 I know, advanved programmers would hang dogs on me, for this ugly code

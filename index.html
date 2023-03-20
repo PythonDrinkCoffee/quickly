@@ -1,0 +1,85 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">  
+        <title> Better Member Game </title>
+        <meta name="description" content="Praca na zaliczenie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+  </head>      
+  <body>
+    
+    <div class="site">
+      <!-- =================================== -->
+      <div  class="headerMenu">
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">
+              <div class="button">New game</div>
+            </a>
+            <div class="dropdown-content">
+              <a href="#board4" class="4" id="board_4">Easy </a>
+              <a href="#board5" class="5" id="board_5">Advanced</a>
+              <a href="#board10" class="10" id="board_10">Master</a>
+            </div>
+          </li>
+          <li><a href="#about"><div class="button">Created by</div></a></li>
+
+        </ul>
+        <ul class="dropdown life displayContent">
+          <li><div class="displayContent" >Your life:</div></li>
+        </ul>
+        <ul class="dropdown life" id="life">
+          <li><div class="button"><i class="fas fa-heart"></i></div></li>
+          <li><div class="button"><i class="fas fa-heart"></i></div></li>
+          <li><div class="button"><i class="fas fa-heart"></i></div></li>
+          <li><div class="button"><i class="fas fa-heart"></i></div></li>
+        </ul>
+      </div>
+ 
+      <!-- =================================== -->
+
+      <div class="container">
+        <div class="field"></div>
+        <div class="containerForFieldGame" id="containerForFieldGame">
+
+          <div  class="fieldGame">
+          
+          </div>
+          <div class="lockFieldGame gameOver" id="lockFieldGame">GAME OVER</div>
+        </div>
+        <div class="field">
+          <div class="check" >
+            <button class="btn" id="check">
+              Try to remember
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- =================================== -->
+      <div  class="footer" id="about">
+        <div class="box20"></div>
+        <div class="box60">
+          <div class="flexCenter">
+            Powered by:
+          </div>
+          <div class="flexCenter">
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="flexCenter small">
+            Last update website 2023
+            <br>
+            Created by PyCoffee
+            <br>
+            passing a computer graphics first term
+          </div>
+        </div>
+        <div class="box20"></div>
+      </div>
+    </div>
+
+    <script src="AppFieldGame.js"></script>  
+  </body>
+ </html>

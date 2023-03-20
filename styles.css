@@ -1,0 +1,297 @@
+html, body {
+	margin: 0;
+	border: 0;
+	z-index: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 24px;
+	display: block;
+}
+
+.site { 
+	background-color:rgb(238, 238, 238);
+	width:100%;
+	height:100%;
+	justify-content: center;
+	z-index:1;
+}
+
+.headerMenu { 
+	display: flex;
+	box-shadow:1px 5px 17px rgba(0, 0, 0, 0.5);
+	background-color:#5008ea;
+	width:100%;
+	height:10%;
+	position:fixed;
+	z-index:10000;
+}
+
+.containerForFieldGame {
+	display: flex;
+	justify-content: center;
+	width:100%;
+	height:60%;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.field {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+
+}
+
+.check, .fieldGame {
+	width: 35%;
+}
+
+.fieldGame {
+	box-shadow:4px 6px 27px rgba(0, 0, 0, 0.25);
+	background-color:rgba(246.49999290704727, 246.49999290704727, 246.49999290704727, 1);
+	height:100%;
+}
+
+.footer {
+	position: absolute;
+	bottom:0px;
+	top:100%;
+	box-shadow:6px -3px 18px rgba(0, 0, 0, 0.25);
+	background-color:#950740;
+	width:100%;
+	height:480px;
+	z-index:2;
+	display: flex;
+}
+
+/*End main */
+
+/*Blocks to click in fieldGame */
+
+.block, .blockChild {
+	background-color: white;
+	float:left;
+	width:25%;
+	height:25%;
+}
+
+.blockChild {
+	box-shadow: -13px -7px 23px -7px rgba(0, 0, 0, 25%);
+	width:100%;
+	height:100%;
+	margin:0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width:50%;
+	display: flex;
+  }
+  
+  li {
+	width:20%;
+	height: 100%;
+	float: left;
+	
+  }
+  ul > li > a {
+	width: 100%;
+	height: 100%;
+  }
+  li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+	text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+	background-color: #ffffff;
+	color: #950740;
+  }
+  
+  li.dropdown {
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 20%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1000;
+
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+
+  }
+
+  .button {
+	width:100%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+  }
+
+
+  element.style {
+}
+.btn {
+    z-index: 10000;
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 100%;
+    border: 0px;
+	box-shadow: 3px 4px 12px 0px rgb(0 0 0 / 25%);
+	overflow:hidden;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.btn:active {
+	background-color: #9c0743;
+}
+
+.lockFieldGame {
+	position: absolute;
+    width: 35%;
+    height: 70%;
+    z-index: 100000;
+}
+
+.headerMenu, ul, .btn {
+	background-color: #950740;
+}
+
+.life {
+	float:right;
+	width: 25%;
+	height: 100%;
+}
+
+.life > li {
+	width:25%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	display: flex;
+
+}
+
+.life > li > div {
+	width:100%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.gameOver {
+	background-color: #950740;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:180%;
+}
+.fa-heart {
+	color:white;
+}
+.fa-heart, .fa-heart-broken {
+	font-size:185%;
+}
+
+.fa-heart-broken {
+	color: #640229;
+}
+
+.box20 {
+	width:20%;
+	height: 100%;
+}
+
+
+.box60 {
+	width:60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.box60 > div {
+	color: white;
+	height:20%;
+	font-weight: 1;
+}
+
+.box20, .box60 {
+	
+}
+
+.flexCenter {
+	width: 100%;
+	height: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.small {
+	font-size: 70%;
+	
+}
+.fa-js-square, .fa-html5, .fa-css3-alt {
+	color: white;
+	font-size: 300%;
+	text-indent: 0px;
+}
+
+.fa-js-square {
+	margin-left: 100px;
+	margin-right:100px;
+	
+}
+
+.displayContent {
+	display: contents;
+	text-align: right!important;
+	justify-content: right!important;
+}
